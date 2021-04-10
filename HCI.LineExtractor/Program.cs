@@ -8,8 +8,8 @@ namespace HCI.LineExtractor
         {
             try
             {
-                var fileHandler = new InputOutputFileHandler(args);
-                fileHandler.Handle();
+                var parameters = CommandLineArgumentsParser.Parse(args);
+                FileReaderWriter.Handle(parameters);
                 Console.WriteLine("Loaded");
                 
             }

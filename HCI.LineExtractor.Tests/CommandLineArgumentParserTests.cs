@@ -36,9 +36,9 @@ namespace HCI.LineExtractor.Tests
         }
 
         [Test]
-        public void Parse_AllArgumentsAreValid_ReturnFileHandlerParameters()
+        public void Parse_AllArgumentsAreValid_ReturnParameters()
         {
-            var parameters = new FileHandlerParameters(String.Empty, string.Empty, new List<int>() {1});
+            var parameters = new FileReaderWriterParameters(String.Empty, string.Empty, new List<int>() {1});
             var args = new[] {string.Empty, string.Empty, "1"};
 
             var result = CommandLineArgumentsParser.Parse(args);

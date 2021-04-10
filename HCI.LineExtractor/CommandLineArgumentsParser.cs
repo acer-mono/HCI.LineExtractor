@@ -5,7 +5,7 @@ namespace HCI.LineExtractor
 {
     public static class CommandLineArgumentsParser
     {
-        public static FileHandlerParameters Parse(string[] args)
+        public static FileReaderWriterParameters Parse(string[] args)
         {
             if (args.Length < 3)
             {
@@ -31,7 +31,7 @@ namespace HCI.LineExtractor
                 lines.Add(line);
             }
             
-            return new FileHandlerParameters(inputPath, outputPath, lines);
+            return new FileReaderWriterParameters(inputPath, outputPath, lines);
         }
     }
 }

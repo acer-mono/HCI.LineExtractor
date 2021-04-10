@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 namespace HCI.LineExtractor
 {
-    public class FileHandlerParameters
+    public class FileReaderWriterParameters
     {
-        public FileHandlerParameters(string inputPath, string outputPath, List<int> lines)
+        public FileReaderWriterParameters(string inputPath, string outputPath, IReadOnlyList<int> lines)
         {
             InputPath = inputPath;
             OutputPath = outputPath;
